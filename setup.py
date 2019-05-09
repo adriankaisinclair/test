@@ -4,7 +4,7 @@ import sys
 import shutil
 #import new_overlay
 import glob
-direc = "~/test/"
+direc = "home/xilinx/"
 files = glob.glob('*')
 for i in range(len(files)): files[i] = direc+files[i] 
 
