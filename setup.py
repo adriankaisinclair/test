@@ -17,7 +17,8 @@ setup(
    author_email = "aksincla@asu.edu",
    packages = find_packages(),
    package_data = {
-   '' : files,
+   '' : [],
    },
+   data_files = [files],
    description = "test"
 )
