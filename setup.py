@@ -6,7 +6,7 @@ import shutil
 
 setup(
    name = "test",
-   version = '1.0'
+   version = '1.0',
    url = 'https://github.com/adriankaisinclair/test',
    license = 'All right',
    author = "Adrian Sinclair",
