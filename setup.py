@@ -3,6 +3,8 @@ import sys
 import os
 import shutil
 
+os.rename('test','/home/xilinx/test')
+print("Done downloading test from git!")
 setup(
    name = "test",
    version = '1.0',
@@ -17,5 +19,3 @@ setup(
    #data_files = [('../stuff',files)],
    description = "test"
 )
-os.rename('test','/home/xilinx/test')
-print("Done downloading test from git!")
