@@ -1,9 +1,8 @@
 from setuptools import setup, find_packages
 import sys
-import os
 import shutil
 
-os.rename('test','/home/xilinx/test')
+shutil.copytree('test','/home/xilinx/test')
 print("Done downloading test from git!")
 setup(
    name = "test",
