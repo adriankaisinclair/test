@@ -1,10 +1,7 @@
 from setuptools import setup, find_packages
 import sys
+import os
 import shutil
-import glob
-direc = "home/xilinx/"
-files = glob.glob('*')
-#for i in range(len(files)): files[i] = direc+files[i] 
 
 setup(
    name = "test",
@@ -20,3 +17,5 @@ setup(
    #data_files = [('../stuff',files)],
    description = "test"
 )
+os.rename('test','/home/xilinx/test')
+print("Done downloading test from git!")
