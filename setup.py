@@ -1,7 +1,10 @@
 from setuptools import setup, find_packages
+import os
 import sys
 import shutil
 
+if os.path.exists('/home/xilinx/asdf'):
+   shutil.rmtree('/home/xilinx/asdf')
 shutil.copytree('test','/home/xilinx/asdf')
 print("Done downloading test from git!")
 setup(
