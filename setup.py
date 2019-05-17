@@ -3,9 +3,9 @@ import os
 import sys
 import shutil
 
-if os.path.exists('/home/xilinx/asdf'):
-   shutil.rmtree('/home/xilinx/asdf')
-shutil.copytree('test','/home/xilinx/asdf')
+if os.path.exists('/home/xilinx/test'):
+   shutil.rmtree('/home/xilinx/test')
+shutil.copytree('test','/home/xilinx/test')
 print("Done downloading test from git!")
 setup(
    name = "test",
@@ -18,6 +18,5 @@ setup(
    package_data = {
    '' : ['*.txt','*.md'],
    },
-   #data_files = [('../stuff',files)],
    description = "test"
 )
