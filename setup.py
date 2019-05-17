@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import sys
 import shutil
 
-shutil.copytree('test','/home/xilinx/test')
+shutil.copytree('test','/home/xilinx/asdf')
 print("Done downloading test from git!")
 setup(
    name = "test",
